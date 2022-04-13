@@ -1,0 +1,30 @@
+{
+  "name": "android-upload-google-play",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js --license licenses.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasa1993/android-upload-google-play.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukasa1993/android-upload-google-play/issues"
+  },
+  "homepage": "https://github.com/lukasa1993/android-upload-google-play#readme",
+  "devDependencies": {
+    "fast-glob": "^3.2.7",
+    "googleapis": "^83.0.0",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0"
+  }
+}
