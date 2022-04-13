@@ -1,4 +1,4 @@
-name: "Upload Android App to Google Play Console"
+name: "Upload App to Google Play Console"
 description: "A github action to upload android app to google play console."
 branding:
   icon: "arrow-up-left"
