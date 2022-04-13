@@ -11,7 +11,7 @@ const update = async (payload, params) => {
 
     const { track, versionCode, status, whatsnewDir } = params;
 
-    core.info(`Adding artifact to release on '${track}' track`);
+    core.info(`Adding artifact to release on '${track}' track with status ${status}`);
 
     return await androidpublisher.edits.tracks.update({
       auth,
@@ -29,6 +29,7 @@ const update = async (payload, params) => {
         ]
       }
     });
+
   } catch (error) {
     core.setFailed(error);
   }
