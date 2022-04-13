@@ -38,12 +38,14 @@ projectDir/
 ## Example usage
 
 ```yaml
-uses: sokchanbo/android-upload-google-play@v1.0.0
-with:
-  service-account: ${{ SERVICE_ACCOUNT }}
-  package-name: com.example.myapp
-  release-file: app/build/outputs/bundle/release/*.aab
-  track: production
-  whatsnew-directory: whatsnew
-  mapping-file: app/build/outputs/mapping/release/mapping.txt
+- name: Upload App to Google Play Console
+  uses: lukasa1993/android-upload-google-play@v2.0.0
+  with:
+    service-account: ${{ SERVICE_ACCOUNT }}
+    package-name: com.example.myapp
+    release-file: app/build/outputs/bundle/release/*.aab
+    track: production
+    status: complete
+    whatsnew-directory: whatsnew
+    mapping-file: app/build/outputs/mapping/release/mapping.txt
 ```
