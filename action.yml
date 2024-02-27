@@ -27,5 +27,5 @@ inputs:
     description: "Directory for release note with multi-language supported. (BCP-47 language tag)"
     required: false
 runs:
-  using: "node18"
+  using: "node20"
   main: "dist/index.js"
