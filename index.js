@@ -27,7 +27,7 @@ async function uploadToGooglePlay(payload, releaseFile, configuration) {
       whatsnewDir
     });
 
-    await edits.commit({ ...payload, editId: id });
+    await edits.commit({ ...payload, editId: id, changesNotSentForReview: true });
   } catch (error) {
     core.setFailed(error);
   }
