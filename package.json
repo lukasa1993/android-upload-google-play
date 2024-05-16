@@ -1,10 +1,10 @@
 {
   "name": "android-upload-google-play",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/ncc build index.js --license licenses.txt",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ./node_modules/.bin/ncc build index.js --license licenses.txt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
